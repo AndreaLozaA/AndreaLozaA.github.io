@@ -1,0 +1,41 @@
+/*.nav-item:hover{
+    opacity: 0.5;
+}
+*/
+.nav-link:hover{
+    text-shadow: 0px 0px 15px #FFF;
+    /*text-decoration: underline;*/
+    border-bottom: solid 1px #FFF;
+    transition: ease all 0.7s;
+}
+
+.nav-link{
+    border-bottom: solid 2px transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+i.bi{
+    font-size: 95px;
+}
+
+.imagen-fondo{
+    background-image: url('../img/fondo.jpg ');
+    background-position: center;
+    background-repeat: no-repeat;
+    /*width: 100%;*/
+    background-size: cover;
+    color: #FFF;
+    padding: 0;
+}
+
+div.color-fondo{
+    background-color:rgba(0, 0, 0,0.5) ;
+    height: 100%;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
