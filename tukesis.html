@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa hotelera Tukesis</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+    <!-- HEADER-MENU DE NAVEGACION - CARRUSEL -->
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12 p-0">
+
+
+                <nav class="py-0  navbar bg-body-tertiary navbar-expand-lg fixed-top" data-bs-theme="dark">
+                    <div class="container">
+                        <a href="#" class="navbar-brand">
+                            <img src="img/logohotel.svg" width="40" class="me-3">
+                            HOTEL TUKESIS
+                        </a>
+
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#nosotros" class="nav-link active">Nosotros</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#productos" class="nav-link active">Oferta</a>
+                                </li>
+
+                                 <!--Menu desplegable-->
+                                 <li class="nav-item dropdown">
+                                    <a  href="#" 
+                                        class="nav-link active dropdown-toggle"
+                                        data-bs-toggle="dropdown"
+
+                                    >
+                                        Servicios
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="habitaciones.html">Habitaciones</a></li>
+                                        <li><a class="dropdown-item" href="eventos.html">Eventos Sociales</a></li>
+                                        <li><a class="dropdown-item" href="restaurantes.html">Restaurantes y bar</a></li>
+                                        <li><a class="dropdown-item" href="paquetes.html">Paquetes especiales</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tukesis.html#direccion" class="nav-link active">Direccion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tukesis.html#contacto" class="nav-link active">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!--Carousel-->
+                <div class="carousel slide" id="principal" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/x.jpg" class="d-block w-100 vh-100 object-fit-cover">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Disfruta</h5>
+                                <p>Visita nuestros mejores lugares</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/p1.jpg" class="d-block w-100 vh-100 object-fit-cover">
+                            <div class="carousel-caption d-none d-lg-block">
+                                <h5>Atencion al cliente</h5>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                            <img src="img/p2.jpg" class="d-block w-100 vh-100 object-fit-cover">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Visitanos</h5>
+                            </div>
+                        </div>
+                        
+
+                        <div class="carousel-item ">
+                            <img src="img/p3.jpg" class="d-block w-100 vh-100 object-fit-cover">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Visitanos</h5>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                            <img src="img/p4.jpg" class="d-block w-100 vh-100 object-fit-cover">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Visitanos</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" data-bs-target="#principal" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#principal" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#principal" data-bs-slide-to="0" class="active">
+                        </button>
+                        <button data-bs-target="#principal" data-bs-slide-to="1">
+                        </button>
+                        <button data-bs-target="#principal" data-bs-slide-to="2">
+                        </button>
+                        <button data-bs-target="#principal" data-bs-slide-to="3">
+                        </button>
+                        <button data-bs-target="#principal" data-bs-slide-to="4">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+     <!-- SOBRE NOSOTROS -->
+     <div class="container " id="nosotros">
+        <section class="row py-5">
+            <div class="col-12">
+                <h2 class="text-center">Sobre Nosotros</h2>
+            </div>
+
+            <article class="col-12 col-md-4 text-center px-4">
+                <i class="bi bi-house-check text-danger text-opacity-75"></i>
+                <h5>Hospedaje a comodidad y garantizada</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat enim consectetur, voluptatum illo cum aut sunt laborum illum accusamus facilis!</p>
+            </article>
+
+            <article class="col-12 col-md-4 text-center px-4">
+                <i class="bi bi-airplane text-secondary"></i>
+                <h5>Planea tu reserva</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat enim consectetur, voluptatum illo cum aut sunt laborum illum accusamus facilis!</p>
+            </article>
+            
+            <article class="col-12 col-md-4 text-center px-4">
+                <i class="bi bi-cash-coin text-success text-opacity-10"></i>
+                <h5>Realiza tu reseva ahora</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat enim consectetur, voluptatum illo cum aut sunt laborum illum accusamus facilis!</p>
+            </article>
+        </section>
+     </div>
+
+        <div class="container-fluid imagen-fondo">
+            <div class="color-fondo p-5">
+                <div class="container text-start">
+                    <h3>Acerca de Tukesis</h3>
+                    <p class="w-75 me-auto fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus aliquam, veritatis sunt corporis repudiandae harum, praesentium doloremque modi quidem ad quisquam nesciunt, numquam porro aliquid ea libero quo ducimus!
+                    Excepturi assumenda, aperiam totam in illo eum error doloremque veniam sequi iste. Reiciendis atque deleniti asperiores soluta qui numquam perspiciatis, eligendi expedita beatae provident perferendis. Exercitationem a ea impedit temporibus.</p>
+                </div> 
+            </div>  
+        </div>
+            
+
+
+    <!-- PRODUCTOS -->
+    <!-- Tarea agregar 12 productos en cards -->
+    <div class="container" id="productos">
+        <section class="row py-5">
+            <div class="col-12">
+                <h2 class="text-center">Productos en oferta</h2>
+            </div>
+            <!-- Tarea agregar 12 productos en cards -->
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p7.jpg" class="card-img-top"> 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-success">Con descuento</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p5.jpg" class="card-img-top" alt="..."> 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-success">Con descuento</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p44.jpg" class="card-img-top" alt="..."> 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-success">Con descuento</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p6.jpg" class="card-img-top" alt="..."> 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-success">Con descuento</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p5.jpg" class="card-img-top"> 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-primary">Disponible</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</p> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p7.jpg" class="card-img-top" alt="..."> 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-primary">Disponible</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</p> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p7.jpg" class="card-img-top" alt="..."> 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-danger">Agotado</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</p> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p33.jpg" class="card-img-top"> 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-primary">Disponible</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</p> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p22.jpg" class="card-img-top" alt="..."> 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-primary">Disponible</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</p> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p11.jpg" class="card-img-top" > 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-danger">Agotado</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</p> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p8.jpg" class="card-img-top" alt="..."> 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-primary">Disponible</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</p> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="img/p7.jpg" class="card-img-top" > 
+                    <div class="card-body"> 
+                        <div class="clearfix mb-3"> 
+                            <span class="float-start badge rounded-pill bg-primary">Disponible</span> 
+                            <span class="float-end price-hp">12354.00&euro;</span> 
+                        </div> 
+                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
+                        <div class="text-center my-4"> 
+                            <a href="#" class="btn btn-warning">Ver mas</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </article>
+
+        </section>
+    </div>
+
+    <!-- DIRECCION -->
+    <div class="container" id="direccion">
+        <section class="row py-5">
+            <div class="col-12 mb-4">
+                <h2 class="text-center">Nuestra direccion</h2>
+            </div>
+
+            <article class="col-12 col-md-6">
+                <p class="fs-5 text-center">
+                    <span class="fw-bold">Direccion</span>
+                    Zona Unificada Potosi, Avenida Juana Calahumana,Nro. 3322, Ex tranca de Senkata, final YPFB
+                    <br>
+                    El Alto - La Paz - Bolivia 
+                </p>
+            </article>
+            <article class="col-12 col-md-6">
+                <p class="fs-5 text-center">
+                    <span class="fw-bold">Atencion: </span>
+                    Lunes a Sabado
+                    <br>
+                    <span class="fw-bold">Horario: </span>
+                        Disponible las 24 horas
+                </p>
+            </article>
+        </section>
+    </div>
+    <div class="container-fluid p-0">
+        <iframe width="100%" heigth="400px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.975772665046!2d-68.19919282387606!3d-16.577727142733174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ed9267622bc81%3A0x97fbd865f3f4825a!2sInstituto%20Tecnol%C3%B3gico%20Bolivia%20Mar!5e0!3m2!1ses!2sbo!4v1716296454824!5m2!1ses!2sbo" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="container-fluid imagen-fondo p-0" id="contacto">
+        <div class="color-fondo">
+            <div class="container">
+                <section class="row py-5">
+                    <article class="col-12 col-md-8 col-lg-6 ms-auto">
+                        <div class="col-12 mb-4">
+                            <h2 class="text-center text-white mb-4">Escribe tu consulta</h2>
+                        </div>
+                        <form class="text-dark">
+                            <div class="mb-3">
+                                <label clase="form-label" for="nombre">Nombres y Apellidos</label>
+                                <input class="form-control" type="text" id="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label clase="form-label" for="correo">Correo electronico</label>
+                                <input class="form-control" type="email" id="correo">
+                            </div>
+                            <div class="mb-3">
+                                <label clase="form-label" for="mensaje">Mensaje: </label>
+                                <textarea class="form-control" id="mensaje"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <input type="submit" class="btn btn-primary col-6 ">
+                            </div>
+                        </form>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+
+                <!-- PIE DE PAGINA -->
+    <div class="container-fluid bg-dark">
+        <div class="container">
+        <section class="row text-light d-flex">
+            <article class="order-1 order-md-0 col-12 col-md-8 pt-3 order-1">
+                <p class="text-center text-md-start">Copyright &copy;2024 - Desarrollado por: Cecilia Andrea Loza</p>
+            </article>
+            <article class=" pt-2 order-0 order-md-1 col-12 col-md-4 d-flex justify-content-evenly ">
+                <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo">
+                    <i class="bi bi-facebook fs-3"></i>
+                </a>
+                <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.youtube.com/@institutotecnologicobolivi4717">
+                    <i class="bi bi-youtube fs-3"></i>
+                </a>
+                <a class="link-light link-opacity-75-hover" target="_blank " href="https://www.facebook.com/itboliviamar.edu.bo">
+                    <i class="bi bi-instagram fs-3"></i>
+                </a>
+                <a class="link-light link-opacity-75-hover" target="_blank" href="https://wa.link/1r4gdj">
+                    <i class="bi bi-whatsapp fs-3"></i>
+                </a>
+            </article>
+        </section>
+         </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
