@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tukesis 1.0</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <style>
+        .form-separator {
+            border-top: 1px solid #ced4da;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER-MENU DE NAVEGACION - CARRUSEL -->
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12 p-0">
+                <nav class="py-0 navbar bg-body-tertiary navbar-expand-lg fixed-top" data-bs-theme="dark">
+                    <div class="container">
+                        <a href="#" class="navbar-brand">
+                            <img src="../img/logohotel.svg" width="40" class="me-3">
+                            TUKESIS 1.0
+                        </a>
+
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="login.html" class="nav-link active">Ingresar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="entrada.html" class="nav-link active">Check-in</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="salida.html" class="nav-link active">Check-out</a>
+                                </li>
+
+                                <!--Menu desplegable-->
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">Registrar</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="reserva.html">Reserva</a></li>
+                                        <li><a class="dropdown-item" href="usuario.html">Usuario</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="salir.html" class="nav-link active">Salir</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Formulario -->
+    <div class="container" id="productos">
+        <section class="row py-5">
+            <div class="col-12 text-center mb-4">
+                <img src="../img/logohotel.svg" width="60" alt="Logo del hotel">
+                <div>No (Número de Reserva):</div>
+                <h2>Solicitud de Reservaciones Individuales</h2>
+            </div>
+            
+            <article class="col-12 col-md-8 col-lg-6 mx-auto">
+                <form action="get" class="border p-4">
+                    <div class="mb-3">
+                        <label for="nombreSolicitante" class="form-label">Nombre del Solicitante:</label>
+                        <input type="text" id="nombreSolicitante" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="tel" id="telefono" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="reservacionesNombre" class="form-label">Reservaciones a nombre de:</label>
+                        <input type="text" id="reservacionesNombre" class="form-control">
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="fechaLlegada" class="form-label">Fecha de Llegada:</label>
+                            <input type="date" id="fechaLlegada" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label for="horaLlegada" class="form-label">Hora de Llegada:</label>
+                            <input type="time" id="horaLlegada" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="numeroPersonas" class="form-label">No. de Personas:</label>
+                        <input type="number" id="numeroPersonas" class="form-control" min="0">
+                    </div>
+
+                    <div class="form-separator"></div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Tipo de Habitación:</label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="habitacionSencilla">
+                                    <label class="form-check-label" for="habitacionSencilla">Sencilla</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="habitacionDoble">
+                                    <label class="form-check-label" for="habitacionDoble">Doble</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="habitacionTriple">
+                                    <label class="form-check-label" for="habitacionTriple">Triple</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="habitacionJrSuite">
+                                    <label class="form-check-label" for="habitacionJrSuite">Jr. Suite</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="habitacionSuite">
+                                    <label class="form-check-label" for="habitacionSuite">Suite</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="habitacionPresidencial">
+                                    <label class="form-check-label" for="habitacionPresidencial">Presidencial</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Ubicación:</label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="ubicacionNorte">
+                                    <label class="form-check-label" for="ubicacionNorte">Sección Norte</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="ubicacionEste">
+                                    <label class="form-check-label" for="ubicacionEste">Sección Este</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="ubicacionInterna">
+                                    <label class="form-check-label" for="ubicacionInterna">Interna</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="ubicacionAltos">
+                                    <label class="form-check-label" for="ubicacionAltos">Pisos Altos</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="ubicacionSur">
+                                    <label class="form-check-label" for="ubicacionSur">Sección Sur</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="ubicacionOeste">
+                                    <label class="form-check-label" for="ubicacionOeste">Sección Oeste</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="ubicacionCalle">
+                                    <label class="form-check-label" for="ubicacionCalle">A la Calle</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="ubicacionBajos">
+                                    <label class="form-check-label" for="ubicacionBajos">Pisos Bajos</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fechaSalida" class="form-label">Fecha de Salida:</label>
+                        <input type="date" id="fechaSalida" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="cuentaNombre" class="form-label">Cuenta a nombre de:</label>
+                        <input type="text" id="cuentaNombre" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Consumos a cargo de la compra:</label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consumoDesayuno">
+                                    <label class="form-check-label" for="consumoDesayuno">Desayuno</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consumoAlmuerzo">
+                                    <label class="form-check-label" for="consumoAlmuerzo">Almuerzo</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consumoCena">
+                                    <label class="form-check-label" for="consumoCena">Cena</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consumoLavanderia">
+                                    <label class="form-check-label" for="consumoLavanderia">Lavandería</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consumoWifi">
+                                    <label class="form-check-label" for="consumoWifi">WiFi</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consumoServicios">
+                                    <label class="form-check-label" for="consumoServicios">Todos los servicios</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="excepciones" class="form-label">Excepciones:</label>
+                        <textarea id="excepciones" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-separator"></div>
+
+                    <div class="mb-3">
+                        <label for="solicitadoPor" class="form-label">Solicitado por:</label>
+                        <input type="text" id="solicitadoPor" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="telefonoSalida" class="form-label">Teléfono:</label>
+                        <input type="tel" id="telefonoSalida" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="habitacionSalida" class="form-label">Habitación:</label>
+                        <input type="text" id="habitacionSalida" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="nombreEntrada" class="form-label">Nombre:</label>
+                        <input type="text" id="nombreEntrada" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="fechaReserva" class="form-label">Fecha de Reserva:</label>
+                        <input type="date" id="fechaReserva" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="iniciales" class="form-label">Iniciales:</label>
+                        <input type="text" id="iniciales" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="precio" class="form-label">Precio:</label>
+                        <input type="number" id="precio" class="form-control" min="0" step="0.01">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="pagadoPor" class="form-label">Pagado por:</label>
+                        <input type="text" id="pagadoPor" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <button class="btn btn-secondary mx-auto d-block" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </div>
+
+    <!-- PIE DE PAGINA -->
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <section class="row text-light d-flex">
+                <article class="order-1 order-md-0 col-12 col-md-8 pt-3">
+                    <p class="text-center text-md-start">Copyright &copy;2024 - Desarrollado por: Cecilia Andrea Loza</p>
+                </article>
+                <article class="pt-2 col-12 col-md-4 d-flex justify-content-evenly">
+                    <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo">
+                        <i class="bi bi-facebook fs-3"></i>
+                    </a>
+                    <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.youtube.com/@institutotecnologicobolivi4717">
+                        <i class="bi bi-youtube fs-3"></i>
+                    </a>
+                    <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo">
+                        <i class="bi bi-instagram fs-3"></i>
+                    </a>
+                    <a class="link-light link-opacity-75-hover" target="_blank" href="https://wa.link/1r4gdj">
+                        <i class="bi bi-whatsapp fs-3"></i>
+                    </a>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

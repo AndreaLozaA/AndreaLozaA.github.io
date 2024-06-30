@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tukesis 1.0</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="..css/estilos.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+    <!-- HEADER-MENU DE NAVEGACION - CARRUSEL -->
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12 p-0">
+                <nav class="py-0  navbar bg-body-tertiary navbar-expand-lg fixed-top" data-bs-theme="dark">
+                    <div class="container">
+                        <a href="#" class="navbar-brand">
+                            <img src="../img/logohotel.svg" width="40" class="me-3">
+                            TUKESIS 1.0
+                        </a>
+
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="login.html" class="nav-link active">Ingresar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="entrada.html" class="nav-link active">Pedidos</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="salida.html" class="nav-link active">Ventas</a>
+                                </li>
+
+                                <!--Menu desplegable-->
+                                <li class="nav-item dropdown">
+                                    <a  href="#" 
+                                        class="nav-link active dropdown-toggle"
+                                        data-bs-toggle="dropdown"
+
+                                    >
+                                        Registrar
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="reserva.html">Reserva</a></li>
+                                        <li><a class="dropdown-item" href="usuario.html">Usuario</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="salir.html" class="nav-link active">Salir</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+    </div>
+
+    <!-- Formulario -->
+    <!-- Tarea agregar 12 productos en cards -->
+    <div class="container" id="productos">
+        <section class="row py-5">
+            <div class="col-12">
+                <h2 class="text-center">Iniciar sesion</h2>
+            </div>
+            
+            <article class="col-12 col-md-8 col-lg-6 mx-auto">
+                <form action="get" class="border p-4">
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">
+                            Usuario:
+                        </label>
+                        <input type="text" id="usuario" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contrasena" class="form-label">
+                            Contraseña:
+                        </label>
+                        <input type="password" id="contrasena" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <button class="btn btn-secondary mx-auto d-block"
+                                type="submit"          
+                        >
+
+                            Ingresar     
+                        </button>
+                    </div>
+                </form>
+            </article>
+
+        </section>
+    </div>
+
+    <!-- PIE DE PAGINA -->
+    <div class="container-fluid bg-dark">
+        <div class="container">
+        <section class="row text-light d-flex">
+            <article class="order-1 order-md-0 col-12 col-md-8 pt-3 order-1">
+                <p class="text-center text-md-start">Copyright &copy;2024 - Desarrollado por: Cecilia Andrea Loza</p>
+            </article>
+            <article class=" pt-2 order-0 order-md-1 col-12 col-md-4 d-flex justify-content-evenly ">
+                <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo">
+                    <i class="bi bi-facebook fs-3"></i>
+                </a>
+                <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.youtube.com/@institutotecnologicobolivi4717">
+                    <i class="bi bi-youtube fs-3"></i>
+                </a>
+                <a class="link-light link-opacity-75-hover" target="_blank " href="https://www.facebook.com/itboliviamar.edu.bo">
+                    <i class="bi bi-instagram fs-3"></i>
+                </a>
+                <a class="link-light link-opacity-75-hover" target="_blank" href="https://wa.link/1r4gdj">
+                    <i class="bi bi-whatsapp fs-3"></i>
+                </a>
+            </article>
+        </section>
+         </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

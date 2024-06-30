@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tukesis 1.0</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            flex: 1;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .signature-pad {
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER-MENU DE NAVEGACION - CARRUSEL -->
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12 p-0">
+                <nav class="py-0 navbar bg-body-tertiary navbar-expand-lg fixed-top" data-bs-theme="dark">
+                    <div class="container">
+                        <a href="#" class="navbar-brand">
+                            <img src="../img/logohotel.svg" width="40" class="me-3">
+                            TUKESIS 1.0
+                        </a>
+
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="login.html" class="nav-link active">Ingresar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="entrada.html" class="nav-link active">Check-in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="salida.html" class="nav-link active">Check-out</a>
+                                </li>
+                                <!--Menu desplegable-->
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">Registrar</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="reserva.html">Reserva</a></li>
+                                        <li><a class="dropdown-item" href="usuario.html">Usuario</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="salir.html" class="nav-link active">Salir</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="content">
+        <!-- Formulario -->
+        <div class="container" id="productos">
+            <section class="row py-5">
+                <div class="col-12">
+                    <div class="text-center mb-4">
+                        <img src="../img/logohotel.svg" width="60" alt="Logo del hotel">
+                        <h2 class="d-inline-block ms-3">SALIDA</h2>
+                    </div>
+                </div>
+                
+                <article class="col-12 col-md-8 col-lg-6 mx-auto">
+                    <form action="get" class="border p-4">
+                        <div class="mb-3">
+                            <label for="room" class="form-label">Habitación:</label>
+                            <input type="text" id="room" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Maletas:</label>
+                            <div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="luggage" id="largeLuggage" value="grande">
+                                    <label class="form-check-label" for="largeLuggage">Grande</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="luggage" id="smallLuggage" value="pequeña">
+                                    <label class="form-check-label" for="smallLuggage">Pequeña</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="luggage" id="otherLuggage" value="otros">
+                                    <label class="form-check-label" for="otherLuggage">Otros</label>
+                                    <input type="text" id="otherLuggageText" class="form-control mt-2" placeholder="Especificar">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Fecha de salida:</label>
+                            <input type="date" id="date" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Firma digital:</label>
+                            <div class="signature-pad mb-2">
+                                <canvas id="signatureCanvas" width="400" height="200"></canvas>
+                            </div>
+                            <button type="button" class="btn btn-secondary" id="clearSignature">Limpiar</button>
+                        </div>
+
+                        <div class="mb-3">
+                            <button class="btn btn-secondary mx-auto d-block" type="submit">Registrar</button>
+                        </div>
+                    </form>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="container-fluid bg-dark text-light">
+        <div class="container">
+            <section class="row d-flex">
+                <article class="col-12 col-md-8 pt-3 order-1 order-md-0">
+                    <p class="text-center text-md-start">Copyright &copy;2024 - Desarrollado por: Cecilia Andrea Loza</p>
+                </article>
+                <article class="col-12 col-md-4 pt-2 order-0 order-md-1 d-flex justify-content-evenly">
+                    <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo">
+                        <i class="bi bi-facebook fs-3"></i>
+                    </a>
+                    <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.youtube.com/@institutotecnologicobolivi4717">
+                        <i class="bi bi-youtube fs-3"></i>
+                    </a>
+                    <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo">
+                        <i class="bi bi-instagram fs-3"></i>
+                    </a>
+                    <a class="link-light link-opacity-75-hover" target="_blank" href="https://wa.link/1r4gdj">
+                        <i class="bi bi-whatsapp fs-3"></i>
+                    </a>
+                </article>
+            </section>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var canvas = document.getElementById("signatureCanvas");
+            var signaturePad = new SignaturePad(canvas);
+
+            document.getElementById("clearSignature").addEventListener("click", function () {
+                signaturePad.clear();
+            });
+        });
+    </script>
+</body>
+</html>
