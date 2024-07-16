@@ -19,7 +19,7 @@
 .btn{
     font-size: 1rem;font-weight: 500;text-transform: uppercase;
 }
-.btn-warning{
+.btn-success{
     color: #ffffff;
     fill: #ffffff;
     border: none;
@@ -28,7 +28,7 @@
     box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25);
     border-radius: 100px
 }
-.btn-warning:hover{
+.btn-success:hover{
     background: none #4eaf73;
     color: #ffffff;
     box-shadow: -1px 6px 13px rgba(13, 243, 155, 0.35)
